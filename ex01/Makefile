@@ -56,7 +56,7 @@ endif
 
 OBJS_CPP=			${SRCS_CPP:.cpp=.o}
 
-NAME=				animal
+NAME=				brain
 
 CC=					clang++
 RM=					rm -f

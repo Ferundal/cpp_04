@@ -1,18 +1,18 @@
 #include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal( void ) {
-	std::cout << "Default WrongAnimal constructor done." <<std::endl;
 	type = "unknown type";
+	std::cout << "Default WrongAnimal constructor done." <<std::endl;
 }
 
 WrongAnimal::WrongAnimal( const WrongAnimal& origin) {
-	std::cout << "WrongAnimal copy constructor done." <<std::endl;
 	type = origin.type;
+	std::cout << "WrongAnimal copy constructor done." <<std::endl;
 }
 
 WrongAnimal& WrongAnimal::operator =(const WrongAnimal& origin) {
-	std::cout << "WrongAnimal assignation constructor done." <<std::endl;
 	type = origin.type;
+	std::cout << "WrongAnimal assignation constructor done." <<std::endl;
 	return *this;
 }
 

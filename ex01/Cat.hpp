@@ -4,8 +4,11 @@
 # include <string>
 # include <iostream>
 # include "Animal.hpp"
+# include "Brain.hpp"
 
 class Cat : public Animal {
+private:
+	Brain *cat_brain_ptr;
 public:
 	Cat( void );
 	Cat( const Cat& origin);
@@ -15,6 +18,9 @@ public:
 
 	std::string getType() const;
 	void makeSound() const;
+
+	bool AddCatIdea(const std::string &idea);
+	void PutCatIdeas();
 };
 
 #endif

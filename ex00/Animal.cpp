@@ -1,18 +1,18 @@
 #include "Animal.hpp"
 
 Animal::Animal( void ) {
-	std::cout << "Default animal constructor done." <<std::endl;
 	type = "unknown type";
+	std::cout << "Default animal constructor done." <<std::endl;
 }
 
 Animal::Animal( const Animal& origin) {
-	std::cout << "Animal copy constructor done." <<std::endl;
 	type = origin.type;
+	std::cout << "Animal copy constructor done." <<std::endl;
 }
 
 Animal& Animal::operator =(const Animal& origin) {
-	std::cout << "Animal assignation constructor done." <<std::endl;
 	type = origin.type;
+	std::cout << "Animal assignation constructor done." <<std::endl;
 	return *this;
 }
 

@@ -1,18 +1,18 @@
 #include "WrongCat.hpp"
 
 WrongCat::WrongCat( void ) {
-	std::cout << "Default WrongCat constructor done." <<std::endl;
 	type = "Cat";
+	std::cout << "Default WrongCat constructor done." <<std::endl;
 }
 
 WrongCat::WrongCat( const WrongCat& origin) {
-	std::cout << "WrongCat copy constructor done." <<std::endl;
 	type = origin.type;
+	std::cout << "WrongCat copy constructor done." <<std::endl;
 }
 
 WrongCat& WrongCat::operator =(const WrongCat& origin) {
-	std::cout << "WrongCat assignation constructor done." <<std::endl;
 	type = origin.type;
+	std::cout << "WrongCat assignation constructor done." <<std::endl;
 	return *this;
 }
 

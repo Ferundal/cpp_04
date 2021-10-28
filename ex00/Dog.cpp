@@ -1,18 +1,18 @@
 #include "Dog.hpp"
 
 Dog::Dog( void ) {
-	std::cout << "Default dog constructor done." <<std::endl;
 	type = "Dog";
+	std::cout << "Default dog constructor done." <<std::endl;
 }
 
 Dog::Dog( const Dog& origin) {
-	std::cout << "Dog copy constructor done." <<std::endl;
 	type = origin.type;
+	std::cout << "Dog copy constructor done." <<std::endl;
 }
 
 Dog& Dog::operator =(const Dog& origin) {
-	std::cout << "Dog assignation constructor done." <<std::endl;
 	type = origin.type;
+	std::cout << "Dog assignation constructor done." <<std::endl;
 	return *this;
 }
 
