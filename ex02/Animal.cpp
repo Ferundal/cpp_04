@@ -20,10 +20,6 @@ Animal::~Animal( void ) {
 	std::cout << "Animal destructor done." <<std::endl;
 }
 
-std::string Animal:: getType() const {
+std::string Animal::getType() const {
 	return type;
-}
-
-void Animal::makeSound() const {
-	std::cout << "Animal too abstract to talk." << std::endl;
 }

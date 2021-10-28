@@ -16,7 +16,6 @@ public:
 
 	virtual ~Cat( void );
 
-	std::string getType() const;
 	void makeSound() const;
 
 	bool AddCatIdea(const std::string &idea);

@@ -16,10 +16,9 @@ public:
 
 	~Dog( void );
 
-	std::string getType() const;
 	void makeSound() const;
-	bool AddDogIdea(const std::string &idea);
-	void PutDogIdeas();
+	virtual bool AddIdea(const std::string &idea);
+	virtual void PutIdeas() const;
 };
 
 #endif

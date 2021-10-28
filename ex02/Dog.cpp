@@ -25,18 +25,14 @@ Dog::~Dog( void ) {
 	std::cout << "Dog destructor done." <<std::endl;
 }
 
-std::string Dog::getType() const{
-	return type;
-}
-
 void Dog::makeSound() const {
 	std::cout << "Dog goes \"Woof\"" << std::endl;
 }
 
-bool Dog::AddDogIdea(const std::string &idea) {
+bool Dog::AddIdea(const std::string &idea) {
 	return (dog_brain_ptr->AddIdea(idea));
 }
 
-void Dog::PutDogIdeas() {
+void Dog::PutIdeas() const {
 	dog_brain_ptr->PutIdeas();
 }

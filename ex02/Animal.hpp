@@ -16,6 +16,8 @@ public:
 
 	std::string getType() const;
 	virtual void makeSound() const = 0;
+	virtual bool AddIdea(const std::string &idea) = 0;
+	virtual void PutIdeas() const = 0;
 };
 
 #endif

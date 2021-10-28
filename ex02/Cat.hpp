@@ -16,11 +16,9 @@ public:
 
 	~Cat( void );
 
-	std::string getType() const;
 	void makeSound() const;
-
-	bool AddCatIdea(const std::string &idea);
-	void PutCatIdeas();
+	virtual bool AddIdea(const std::string &idea);
+	virtual void PutIdeas() const;
 };
 
 #endif

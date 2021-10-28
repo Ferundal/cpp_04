@@ -13,7 +13,6 @@ public:
 
 	~Cat( void );
 
-	std::string getType() const;
 	void makeSound() const;
 };
 

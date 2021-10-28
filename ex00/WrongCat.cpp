@@ -20,10 +20,6 @@ WrongCat::~WrongCat( void ) {
 	std::cout << "WrongCat destructor done." <<std::endl;
 }
 
-std::string WrongCat::getType() const {
-	return type;
-}
-
 void WrongCat::makeSound() const{
 	std::cout << "WrongCat goes \"Meow\"" << std::endl;
 }

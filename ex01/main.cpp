@@ -37,4 +37,21 @@ int main() {
 		test_dog_two.PutDogIdeas();
 		std::cout << "---------------------------------------" << std::endl;
 	}
+	{
+		Cat test_cat_one;
+		std::cout << "---------------------------------------" << std::endl;
+		test_cat_one.AddCatIdea("Reap");
+		test_cat_one.AddCatIdea("Tear");
+		Cat test_cat_two;
+		test_cat_two.AddCatIdea("Hate");
+		std::cout << "---------------------------------------" << std::endl;
+		test_cat_one.PutCatIdeas();
+		test_cat_two.PutCatIdeas();
+		std::cout << "---------------------------------------" << std::endl;
+		test_cat_two = test_cat_one;
+		std::cout << "---------------------------------------" << std::endl;
+		test_cat_one.PutCatIdeas();
+		test_cat_two.PutCatIdeas();
+		std::cout << "---------------------------------------" << std::endl;
+	}
 }

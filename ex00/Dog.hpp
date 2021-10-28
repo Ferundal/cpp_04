@@ -13,7 +13,6 @@ public:
 
 	~Dog( void );
 
-	std::string getType() const;
 	void makeSound() const;
 };
 

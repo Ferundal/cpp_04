@@ -25,18 +25,14 @@ Cat::~Cat( void ) {
 	std::cout << "Cat destructor done." <<std::endl;
 }
 
-std::string Cat::getType() const {
-	return type;
-}
-
 void Cat::makeSound() const{
 	std::cout << "Cat goes \"Meow\"" << std::endl;
 }
 
-bool Cat::AddCatIdea(const std::string &idea) {
+bool Cat::AddIdea(const std::string &idea) {
 	return (cat_brain_ptr->AddIdea(idea));
 }
 
-void Cat::PutCatIdeas() {
+void Cat::PutIdeas() const {
 	cat_brain_ptr->PutIdeas();
 }
